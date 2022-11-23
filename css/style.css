@@ -10,7 +10,11 @@
   body {
     font-family: sans-serif;
     color: var(--white);
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  section {
+    margin-bottom: 15px;
   }
   
   /* ! Utils */
@@ -19,14 +23,14 @@
     color: var(--black);
   }
 
-  .row {
-    margin-bottom: 10px;
-  }
-
   .row > [class^="col"] {
     min-height: 50px;
     background-color: var(--light-blue);
     border: 1px solid var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .row > [class^="col"] [class^="col"] {
@@ -34,8 +38,17 @@
     background-color: var(--green);
     border: 1px solid var(--light-blue);
     padding: 0 10px;
+    align-items: center;
   }
 
   .col-6 > .row {
     padding: 0 10px;
   }
+
+  .nested-row {
+    width: 100%;
+  }
+
+
+
+  
