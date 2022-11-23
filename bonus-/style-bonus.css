@@ -1,0 +1,60 @@
+/* ! Custom properties */
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --brown: #B58863;
+    --dark-dark-brown:#932F11;
+    --dark-brown: #854B26;
+    --cream: #F0D9B5;
+  }
+  
+  /* ! Generics */
+  body {
+    font-family: sans-serif;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  i {
+    font-size: 40px;
+  }
+  
+  /* ! Utils */
+  .row > [class^="col"] {
+    min-height: 60px;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-dark-brown {
+    background-color: var(--dark-brown);
+  }
+
+  .bg-dark-dark-brown {
+    background-color: var(--dark-dark-brown);
+  }
+
+  .bg-cream {
+    background-color: var(--cream);
+  }
+
+  .bg-brown {
+    background-color: var(--brown);
+  }
+
+  .light {
+    color: var(--cream);
+  }
+
+  .dark {
+    color: var(--brown);
+  }
+
+  
+
+
+  
