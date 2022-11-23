@@ -1,10 +1,41 @@
-  /* Generics */
-  body {
-    font-family: sans-serif;
+  /* ! Custom properties */
+  :root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-blue: #006CFA;
+    --green: #00E165;
   }
   
-  /* Utils */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  /* ! Generics */
+  body {
+    font-family: sans-serif;
+    color: var(--white);
+    font-size: 13px;
+  }
+  
+  /* ! Utils */
+  .title {
+    margin: 3px 0;
+    color: var(--black);
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .row > [class^="col"] {
+    min-height: 50px;
+    background-color: var(--light-blue);
+    border: 1px solid var(--white);
+  }
+
+  .row > [class^="col"] [class^="col"] {
+    min-height: 30px;
+    background-color: var(--green);
+    border: 1px solid var(--light-blue);
+    padding: 0 10px;
+  }
+
+  .col-6 > .row {
+    padding: 0 10px;
   }
